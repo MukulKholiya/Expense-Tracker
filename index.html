@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="addItemButton" class="button">Add Item</button>
+        <button id="showItemsButton" class="button">Show Items</button>
+        <div id="formContainer" class="form-container">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemPrice" placeholder="Item Price" required>
+            <button type="button" id="submitItemButton">Add Item</button>
+        </div>
+        <div id="itemListContainer" class="item-list" style="display: none;">
+            <ul id="itemList"></ul>
+        </div>
+        <div class="total-expense">Total Expense: Rs. <span id="totalExpense">0.00</span></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
